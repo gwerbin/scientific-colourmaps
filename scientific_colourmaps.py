@@ -37,7 +37,9 @@ def load_cmap(cmap_name, cmap_path=Path('./ScientificColourMaps4.zip')):
     import matplotlib.pyplot as plt
     from scientific_colourmaps import load_cmap
 
-    plt.imshow(np.array([np.arange(-1, 1, 12), np.arange(1, -1, 12)], cmap=load_cmap('berlin'))
+    plot_data = np.hstack([np.arange(-1, 1, 1/6)[:,None],
+                           np.arange(1, -1, -1/6)[:,None]])
+    plt.imshow(plot_data, cmap=load_cmap('berlin'))
     plt.show()
     """
     cmap_filename = f'ScientificColourMaps4/{cmap_name}/{cmap_name}.txt'  # not sure if I need to care about Windows slashes
