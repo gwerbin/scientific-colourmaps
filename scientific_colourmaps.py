@@ -47,13 +47,3 @@ def load_cmap(cmap_name, cmap_path=Path('./ScientificColourMaps4.zip')):
             cmap_data = np.loadtxt(cmap_file)
 
     return LinearSegmentedColormap.from_list(cmap_name, cmap_data)
-
-
-@lru_cache(None)
-def cmap(cmap_name):
-    """
-    cmap_tofino = load_cmap('tofino')
-    cmap_lisbon = load_cmap('lisbon')
-    cmap_berlin = load_cmap('berlin')
-    """
-    return _load_cmap(cmap_name)
