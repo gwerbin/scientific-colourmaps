@@ -37,8 +37,8 @@ def load_cmap(cmap_name, cmap_path=Path('./ScientificColourMaps4.zip')):
     import matplotlib.pyplot as plt
     from scientific_colourmaps import load_cmap
 
-    plot_data = np.hstack([np.arange(-1, 1, 1/6)[:,None],
-                           np.arange(1, -1, -1/6)[:,None]])
+    plot_data = np.vstack([np.arange(-1, 1, 1/6)[None,:],
+                           np.arange(1, -1, -1/6)[None,:]])
     plt.imshow(plot_data, cmap=load_cmap('berlin'))
     plt.show()
     """
