@@ -1,0 +1,2 @@
+graft scientific_colourmaps
+include setup.py tests.py

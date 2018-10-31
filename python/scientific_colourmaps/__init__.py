@@ -16,6 +16,7 @@ from zipfile import ZipFile
 import numpy as np
 from matplotlib.colors import LinearSegmentedColormap
 
+
 __all__ = [
     '__version__',
     'load_cmap',
@@ -23,7 +24,7 @@ __all__ = [
 ]
 
 
-__version__ = pkg_resources.require('scientific-colormaps')[0].version
+__version__ = pkg_resources.require('scientific-colourmaps')[0].version
 
 
 CMAP_DEFAULT_PATH = Path('./ScientificColourMaps4.zip')
@@ -53,7 +54,8 @@ def load_cmap(cmap_name, cmap_path=CMAP_DEFAULT_PATH):
     plt.imshow(plot_data, cmap=load_cmap('berlin'))
     plt.show()
     """
-    cmap_filename = f'ScientificColourMaps4/{cmap_name}/{cmap_name}.txt'  # not sure if I need to care about Windows slashes
+    # not sure if I need to care about Windows slashes inside a ZipFile
+    cmap_filename = 'ScientificColourMaps4/{cmap_name}/{cmap_name}.txt'.format(cmap_name=cmap_name)
 
     with ZipFile(cmap_path, 'r') as archive:
         with archive.open(cmap_filename) as cmap_file:
