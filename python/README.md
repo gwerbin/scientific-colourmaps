@@ -6,7 +6,13 @@
 pip install scientific-colourmaps
 ```
 
-## Usage
+or
+
+```bash
+conda install -c gwerbin scientific-colourmaps
+```
+
+## API
 
 - *module* `scientific_colourmaps`
   - *function* `load_cmap`
@@ -20,7 +26,7 @@ pip install scientific-colourmaps
     - value: `pathlib.Path('./ScientificColourMaps4.zip')`
 - *module* `scientific_colormaps`, alias of `scientific_colourmaps` for United-States-of-American developers.
 
-### Example
+## Example
 
 In the shell:
 

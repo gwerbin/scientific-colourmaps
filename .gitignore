@@ -4,3 +4,4 @@ python/build/
 python/dist/
 .snakemake
 ScientificColourMaps4.zip
+conda-build/
