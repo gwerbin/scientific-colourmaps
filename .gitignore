@@ -1,2 +1,6 @@
 *.egg-info/
 __pycache__/
+python/build/
+python/dist/
+.snakemake
+ScientificColourMaps4.zip

@@ -1,0 +1,44 @@
+{% set name = "scientific-colourmaps" %}
+{% set version = "1.0b0" %}
+{% set extension = ".tar.gz" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}{{ extension }}"
+  sha256: 0022ab13ccd91ca7a6a6afa02f9e9936354e02482c5683b4366e668c1838556c
+
+build:
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+  noarch: python
+
+requirements:
+  host:
+    - matplotlib
+    - pip
+    - python
+    - setuptools
+  run:
+    - matplotlib
+    - python
+    - setuptools
+
+test:
+  imports:
+    - scientific_colormaps
+    - scientific_colourmaps
+
+about:
+  home: https://github.com/gwerbin/scientific-colourmaps
+  license: MIT
+  license_family: MIT
+  summary: Fabio Crameri's scientific colourmaps
+  doc_url: https://github.com/gwerbin/scientific-colourmaps/blob/master/python/README.md
+  dev_url: https://github.com/gwerbin/scientific-colourmaps
+
+extra:
+  recipe-maintainers:
+    - gwerbin
