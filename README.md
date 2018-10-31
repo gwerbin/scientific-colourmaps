@@ -7,7 +7,8 @@ As of October 30, 2018:
 
 ## Versions
 
-- [`python`](./python/README.md)
+- [Python](./python/README.md)
+- More to come...
 
 ## References
 
