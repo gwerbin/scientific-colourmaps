@@ -1,9 +1,13 @@
-# Load Fabio Crameri's scientific colourmaps
+# Fabio Crameri's scientific colourmaps
 
 As of October 30, 2018:
-  - the homepage is http://www.fabiocrameri.ch/colourmaps.php
-  - the direct download is http://www.fabiocrameri.ch/resources/ScientificColourMaps4.zip
-  - the original README file is http://www.fabiocrameri.ch/resources/%2BREADME_ScientificColourmaps.pdf
+  - the homepage is [http://www.fabiocrameri.ch/colourmaps.php](http://www.fabiocrameri.ch/colourmaps.php)
+  - the direct download is [http://www.fabiocrameri.ch/resources/ScientificColourMaps4.zip](http://www.fabiocrameri.ch/resources/ScientificColourMaps4.zip)
+  - the original README file is [http://www.fabiocrameri.ch/resources/%2BREADME_ScientificColourmaps.pdf](http://www.fabiocrameri.ch/resources/%2BREADME_ScientificColourmaps.pdf)
+
+## Versions
+
+- [`python`](./python/README.md)
 
 ## References
 

@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-pip install "git+https://github.com/gwerbin/scientific-colourmaps@master#egg_info=scientific-colormaps&subdirectory=python"
+pip install scientific-colourmaps
 ```
 
 ## Usage
@@ -18,6 +18,7 @@ pip install "git+https://github.com/gwerbin/scientific-colourmaps@master#egg_inf
     - *return* set of strings, containing available cmap names
   - *variable* `CMAP_DEFAULT_PATH`, instance of `pathlib.Path`
     - value: `pathlib.Path('./ScientificColourMaps4.zip')`
+- *module* `scientific_colormaps`, alias of `scientific_colourmaps` for United-States-of-American developers.
 
 ### Example
 
